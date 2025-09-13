@@ -1,0 +1,24 @@
+title: Jason Shiroff
+description: Living on la frontera - exploring the ecotones of the human spirit
+baseurl: ""
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Navigation
+header_pages:
+  - index.md
+  - about.md
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections (optional - for blog posts)
+collections:
+  posts:
+    output: true
