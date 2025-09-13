@@ -23,7 +23,24 @@
     </header>
 
     <main class="container">
-        {{ content }}
+        {% if page.hero %}
+        <div class="hero-section fade-in">
+            <div class="hero-text">
+                {{ content }}
+            </div>
+        </div>
+        {% elsif page.title == 'About' %}
+        <div class="about-section active">
+            <h2>{{ page.title }}</h2>
+            <div class="about-text">
+                {{ content }}
+            </div>
+        </div>
+        {% else %}
+        <div class="content-section">
+            {{ content }}
+        </div>
+        {% endif %}
     </main>
 
     <footer>
@@ -31,5 +48,22 @@
             <p>&copy; 2024 {{ site.title }}. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Add entrance animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+        
+        // Add parallax effect to background
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            document.body.style.backgroundPosition = `center ${rate}px`;
+        });
+    </script>
 </body>
 </html>
