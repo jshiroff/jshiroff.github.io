@@ -6,4 +6,4 @@ permalink: /welcome/
 
 # Welcome
 
-Paste the current Welcome page content from shiroff.com here as Markdown.
+I live on la frontera, in the spaces between heart and mind, poetry and pose, virtuality and touch, fear and action, impossibility and unstoppability.
