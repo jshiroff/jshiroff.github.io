@@ -6,8 +6,6 @@ permalink: /Home/
 
 # Welcome
 
-\--- layout: default title: Home ---
-
 I live on la frontera,  
 in the spaces between  
 heart and mind,  
