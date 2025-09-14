@@ -1,24 +1,23 @@
-title: Jason Shiroff
-description: Living on la frontera - exploring the ecotones of the human spirit
-baseurl: ""
-url: "https://jshiorff.github.io"
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
+title: "Shiroff"
+description: "Static site converted for GitHub Pages"
+author: "Site Owner"
+url: "https://shiroff.com"
 theme: minima
 
-# Navigation
-header_pages:
-  - index.md
-  - about.md
+markdown: kramdown
+kramdown:
+  input: GFM
 
-# Plugins
+# Optional: simple nav labels
+nav:
+  - title: "Home"
+    url: /
+  - title: "Welcome"
+    url: /welcome/
+  - title: "About"
+    url: /about/
+
+# Enable these only if adding plugins supported by Pages
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-
-# Collections (optional - for blog posts)
-collections:
-  posts:
-    output: true
+  - jekyll-seo-tag
