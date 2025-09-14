@@ -11,9 +11,7 @@ kramdown:
 # Optional: simple nav labels
 nav:
   - title: "Home"
-    url: /
-  - title: "Welcome"
-    url: /welcome/
+    url: /home
   - title: "About"
     url: /about/
 
